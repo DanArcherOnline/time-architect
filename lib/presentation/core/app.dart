@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:time_architect/blueprint_list_page.dart';
+import 'package:time_architect/presentation/pages/blueprint_list_page.dart';
 
 class App extends StatelessWidget {
   // This widget is the root of your application.
