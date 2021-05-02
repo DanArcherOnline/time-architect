@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:time_architect/presentation/pages/blueprint_list_page.dart';
+import 'package:time_architect/presentation/core/router.gr.dart';
 
 class App extends StatelessWidget {
-  // This widget is the root of your application.
+  final _appRouter = AppRouter();
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routeInformationParser: _appRouter.defaultRouteParser(),
+      routerDelegate: _appRouter.delegate(),
       title: 'Time Architect',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BlueprintListPage(),
     );
   }
 }
