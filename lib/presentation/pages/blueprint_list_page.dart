@@ -20,7 +20,10 @@ class BlueprintListPage extends StatelessWidget {
         itemCount: dummyBlueprintList.length,
         itemBuilder: (context, index) {
           final blueprint = dummyBlueprintList[index];
-          return BlueprintCard(title: blueprint.title);
+          return BlueprintCard(
+            title: blueprint.title,
+            onTap: () => context.router.push(BlueprintDetailsRoute()),
+          );
         },
       ),
     );

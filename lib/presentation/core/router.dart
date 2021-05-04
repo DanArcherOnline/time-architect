@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:time_architect/presentation/pages/blueprint_details_page.dart';
 import 'package:time_architect/presentation/pages/blueprint_form_page.dart';
 import 'package:time_architect/presentation/pages/blueprint_list_page.dart';
 
@@ -14,6 +15,9 @@ const String RouteSuffix = 'Route';
       ),
       AutoRoute(
         page: BlueprintFormPage,
+      ),
+      AutoRoute(
+        page: BlueprintDetailsPage,
       ),
     ])
 class $AppRouter {}
